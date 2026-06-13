@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anthony Hernandez | Social Media Proposal for Toot 'n Totum</title>
+<meta name="description" content="A social media proposal for Toot 'n Totum, prepared by Anthony Hernandez for the Social Media Coordinator role.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --red: #ee2a29;
+    --red-hover: #c90f0c;
+    --green: #038640;
+    --blue: #0055a5;
+    --ink: #080000;
+    --gray: #939598;
+    --text: #333333;
+    --light: #f7f7f7;
+    --old-light: #ebebeb;
+    --line: #e4e0e0;
+    --white: #ffffff;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text);
+    background-color: var(--white);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .width-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  section { padding: 4.5rem 0; scroll-margin-top: 70px; }
+
+  a { color: inherit; }
+
+  /* ===== Top bar ===== */
+  .topbar {
+    background-color: var(--ink);
+    color: var(--white);
+    font-size: .8rem;
+  }
+  .topbar .width-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-top: .55rem;
+    padding-bottom: .55rem;
+  }
+  .topbar .mark {
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+  }
+  .topbar .tag {
+    background-color: var(--white);
+    color: var(--red);
+    font-weight: 700;
+    padding: .3em .9em;
+    border-radius: 3px;
+    white-space: nowrap;
+  }
+
+  /* ===== Header ===== */
+  .header {
+    background-color: var(--white);
+    border-bottom: 1px solid var(--line);
+  }
+  .header .width-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+  }
+  .brand { line-height: 1.2; }
+  .brand .name {
+    color: var(--red);
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: .01em;
+  }
+  .brand .sub {
+    font-size: .75rem;
+    font-weight: 600;
+    color: var(--gray);
+    text-transform: uppercase;
+    letter-spacing: .18em;
+  }
+  .prepared { text-align: right; line-height: 1.4; }
+  .prepared .label {
+    font-size: .68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    color: var(--gray);
+  }
+  .prepared .who { font-size: .9rem; font-weight: 600; }
+
+  /* ===== Sticky section nav ===== */
+  .site-nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 2px 10px rgba(0,0,0,.05);
+  }
+  .site-nav .width-container {
+    display: flex;
+    gap: 1.6rem;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .site-nav a {
+    display: inline-block;
+    padding: .85rem 0;
+    font-size: .82rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    transition: color .2s ease, border-color .2s ease;
+  }
+  .site-nav a:hover { color: var(--red); border-bottom-color: var(--red); }
+
+  /* ===== Shared type ===== */
+  .eyebrow {
+    display: block;
+    font-size: .76rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: var(--green);
+    margin-bottom: .9rem;
+  }
+  .section-title {
+    font-size: clamp(1.7rem, 3.4vw, 2.3rem);
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--text);
+  }
+  .section-title .accent { color: var(--red); }
+  .section-subtitle {
+    font-size: 1.08rem;
+    font-style: italic;
+    font-weight: 700;
+    color: var(--gray);
+    margin-top: .6rem;
+  }
+  .section-head { text-align: center; max-width: 760px; margin: 0 auto 2.6rem; }
+  .section-intro { max-width: 760px; margin: 1.4rem auto 0; text-align: center; }
+
+  .btn {
+    display: inline-block;
+    padding: .7rem 1.6rem;
+    border-radius: 6px;
+    background-color: var(--green);
+    color: var(--white);
+    font-weight: 700;
+    font-size: .95rem;
+    text-decoration: none;
+    transition: background-color .25s ease, transform .25s ease;
+  }
+  .btn:hover { background-color: #026b33; transform: translateY(-1px); }
+  .btn.btn-red { background-color: var(--red); }
+  .btn.btn-red:hover { background-color: var(--red-hover); }
+
+  .texture {
+    background-image: repeating-linear-gradient(115deg, rgba(255,255,255,.05) 0 2px, transparent 2px 16px);
+  }
+
+  /* ===== Hero ===== */
+  .hero { padding: 4rem 0 4.5rem; }
+  .hero .width-container {
+    display: grid;
+    grid-template-columns: 1.15fr .85fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  .hero-copy { text-align: center; }
+  .hero-copy h1 {
+    color: var(--red);
+    font-size: clamp(2.4rem, 5.5vw, 3.4rem);
+    font-weight: 700;
+    line-height: 1.08;
+  }
+  .hero-role {
+    font-size: 1.15rem;
+    font-style: italic;
+    font-weight: 700;
+    color: var(--text);
+    margin-top: .7rem;
+  }
+  .hero-thesis {
+    font-size: 1.22rem;
+    font-weight: 600;
+    line-height: 1.5;
+    max-width: 520px;
+    margin: 1.4rem auto 0;
+  }
+  .hero-meta { font-size: .85rem; color: var(--gray); font-weight: 600; margin-top: 1.1rem; }
+  .hero-btns { display: flex; gap: .9rem; justify-content: center; flex-wrap: wrap; margin-top: 1.6rem; }
+  .hero-panel {
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 0 50px 50px 50px;
+    padding: 2.4rem 2.2rem;
+    box-shadow: 0 14px 30px rgba(238, 42, 41, .25);
+  }
+  .hero-panel .panel-label {
+    font-size: .72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    opacity: .9;
+  }
+  .fact { padding: 1.05rem 0; border-bottom: 1px solid rgba(255,255,255,.3); }
+  .fact:last-child { border-bottom: none; padding-bottom: 0; }
+  .fact .big { font-size: 2rem; font-weight: 700; line-height: 1.1; }
+  .fact .small { font-size: .92rem; font-weight: 600; opacity: .95; }
+
+  /* ===== Current state ===== */
+  .current { background-color: var(--light); }
+  .platform-state-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.6rem;
+    margin-top: 2.6rem;
+  }
+  .state-card {
+    background-color: var(--white);
+    border-radius: 0 50px 50px 50px;
+    border-top: 6px solid var(--red);
+    padding: 1.9rem 1.7rem 1.7rem;
+    box-shadow: 0 4px 18px rgba(0,0,0,.07);
+    page-break-inside: avoid;
+  }
+  .state-card.ig { border-top-color: var(--green); }
+  .state-card.fb { border-top-color: var(--blue); }
+  .state-card h3 { font-size: 1.3rem; font-weight: 700; }
+  .state-card .tagline {
+    font-size: .88rem;
+    font-style: italic;
+    font-weight: 700;
+    color: var(--gray);
+    margin-bottom: .85rem;
+  }
+  .state-card p { font-size: .95rem; }
+  .state-card .opportunity { margin-top: 1rem; font-size: .9rem; font-weight: 600; }
+  .state-card .opportunity strong { color: var(--green); }
+
+  /* ===== Core recommendation ===== */
+  .recommendation { background-color: var(--ink); color: var(--white); text-align: center; }
+  .recommendation .eyebrow { color: var(--red); }
+  .recommendation h2 {
+    font-size: clamp(2.2rem, 5.5vw, 3.5rem);
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  .recommendation h2 .line-two { color: var(--red); }
+  .recommendation p {
+    max-width: 720px;
+    margin: 1.5rem auto 0;
+    font-size: 1.05rem;
+    color: rgba(255,255,255,.92);
+  }
+  .chips { display: flex; justify-content: center; flex-wrap: wrap; gap: .8rem; margin-top: 2.2rem; }
+  .chip {
+    border: 1px solid rgba(255,255,255,.4);
+    border-radius: 100px;
+    padding: .45em 1.2em;
+    font-size: .85rem;
+    font-weight: 600;
+  }
+  .recommendation .kicker { margin-top: 2rem; font-size: 1.15rem; font-weight: 700; font-style: italic; }
+
+  /* ===== Values note ===== */
+  .values-note {
+    max-width: 800px;
+    margin: 2.6rem auto 0;
+    border: 1px solid rgba(255,255,255,.3);
+    border-radius: 0 30px 0 30px;
+    padding: 1.7rem 1.9rem;
+    text-align: left;
+  }
+  .values-note .values-label {
+    display: block;
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: var(--red);
+    margin-bottom: .7rem;
+  }
+  .recommendation .values-note p { max-width: none; margin: 0; font-size: .97rem; text-align: left; }
+  .values-note strong { color: var(--white); }
+
+  /* ===== Platform strategy ===== */
+  .platform-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 1.6rem;
+    margin-top: 2.6rem;
+  }
+  .platform-card {
+    background-color: var(--white);
+    border-radius: 0 30px 0 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0,0,0,.09);
+    display: flex;
+    flex-direction: column;
+    page-break-inside: avoid;
+  }
+  .platform-card .card-head { padding: 1.25rem 1.5rem; color: var(--white); }
+  .platform-card.tt .card-head { background-color: var(--red); }
+  .platform-card.ig .card-head { background-color: var(--green); }
+  .platform-card.fb .card-head { background-color: var(--blue); }
+  .platform-card .card-head h3 { font-size: 1.35rem; font-weight: 700; }
+  .platform-card .card-head .role { font-size: .85rem; font-style: italic; font-weight: 600; opacity: .95; }
+  .platform-card .card-body { padding: 1.5rem; display: flex; flex-direction: column; flex-grow: 1; }
+  .check-list { list-style: none; }
+  .check-list li { position: relative; padding-left: 1.7em; font-size: .93rem; margin-bottom: .9rem; }
+  .check-list li::before {
+    content: '';
+    position: absolute;
+    left: .25em;
+    top: .32em;
+    width: .45em;
+    height: .85em;
+    border-right: 3px solid var(--green);
+    border-bottom: 3px solid var(--green);
+    transform: rotate(45deg);
+  }
+  .cadence {
+    margin-top: auto;
+    background-color: var(--light);
+    border-radius: 100px;
+    padding: .55em 1.1em;
+    font-size: .78rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  /* ===== Community content model ===== */
+  .community { background-color: var(--light); }
+  .community .narrative { max-width: 760px; margin: 0 auto; text-align: center; }
+  .community .narrative p + p { margin-top: 1.1rem; }
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.6rem;
+    margin-top: 2.6rem;
+  }
+  .step {
+    background-color: var(--white);
+    border-radius: 0 30px 0 30px;
+    padding: 1.9rem 1.6rem;
+    text-align: center;
+    box-shadow: 0 4px 18px rgba(0,0,0,.07);
+    page-break-inside: avoid;
+  }
+  .step .num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.15rem;
+    margin-bottom: .9rem;
+  }
+  .step.s1 .num { background-color: var(--red); }
+  .step.s2 .num { background-color: var(--green); }
+  .step.s3 .num { background-color: var(--blue); }
+  .step h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: .5rem; }
+  .step p { font-size: .92rem; }
+  .community .bonus { text-align: center; font-size: .95rem; font-style: italic; font-weight: 600; color: var(--gray); margin-top: 2.2rem; }
+
+  /* ===== Humor and memes ===== */
+  .humor-grid {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 2.4rem;
+  }
+  .humor-copy > * + * { margin-top: 1.2rem; }
+  .humor-copy p { font-size: 1rem; }
+  .big-idea {
+    background-color: var(--ink);
+    color: var(--white);
+    border-radius: 0 30px 0 30px;
+    padding: 1.4rem 1.7rem;
+    font-size: 1.18rem;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+  .big-idea .accent { color: var(--red); }
+  .tone-cards { display: flex; flex-direction: column; gap: .9rem; }
+  .tone {
+    background-color: var(--light);
+    border-left: 4px solid var(--gray);
+    border-radius: 0 12px 12px 0;
+    padding: .9rem 1.1rem;
+  }
+  .tone.tt { border-left-color: var(--red); }
+  .tone.ig { border-left-color: var(--green); }
+  .tone.fb { border-left-color: var(--blue); }
+  .tone-name { font-weight: 700; font-size: .95rem; }
+  .tone.tt .tone-name { color: var(--red); }
+  .tone.ig .tone-name { color: var(--green); }
+  .tone.fb .tone-name { color: var(--blue); }
+  .tone-desc { font-size: .88rem; margin-top: .2rem; }
+  .meme-col { display: flex; justify-content: center; }
+  .meme-card {
+    width: 100%;
+    max-width: 330px;
+    background-color: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 0 30px 0 30px;
+    box-shadow: 0 6px 22px rgba(0,0,0,.1);
+    padding: 1rem 1rem 1.2rem;
+  }
+  .mc-head { display: flex; align-items: center; gap: 9px; padding: .2rem .3rem .7rem; }
+  .mc-user { font-weight: 700; font-size: 13px; }
+  .mc-head .mc-user { flex-grow: 1; }
+  .mc-dots { font-weight: 700; letter-spacing: 1px; color: #262626; }
+  .mc-drop { aspect-ratio: 1 / 1; background-color: #f4f4f4; border-radius: 12px; padding: 12px; display: flex; }
+  .mc-cap { font-size: 13px; line-height: 1.45; padding: .7rem .3rem 0; }
+  .mc-tag {
+    display: inline-block;
+    margin: .9rem .3rem 0;
+    background-color: var(--old-light);
+    border-radius: 100px;
+    padding: .35em 1em;
+    font-size: .72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+  }
+
+  /* ===== Mockups (shared phone shell) ===== */
+  .mockups-note {
+    text-align: center;
+    font-size: .92rem;
+    font-weight: 600;
+    color: var(--gray);
+    max-width: 620px;
+    margin: 0 auto 2.8rem;
+  }
+  .phones { display: flex; justify-content: center; flex-wrap: wrap; align-items: flex-start; gap: 3rem; }
+  .concept { width: 300px; }
+  .phone {
+    background-color: #0a0a0a;
+    border-radius: 46px;
+    padding: 11px;
+    box-shadow: 0 18px 40px rgba(0,0,0,.22);
+  }
+  .screen { position: relative; background-color: var(--white); border-radius: 36px; overflow: hidden; }
+  .island {
+    position: absolute;
+    top: 9px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 86px;
+    height: 24px;
+    background-color: #0a0a0a;
+    border-radius: 100px;
+    z-index: 4;
+  }
+  .statusbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 24px 6px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .statusbar .right { display: flex; align-items: center; gap: 5px; }
+  .home-bar { width: 108px; height: 4px; background-color: #111; border-radius: 100px; margin: 2px auto 9px; }
+
+  /* Instagram screen */
+  .ph-header { display: flex; align-items: center; gap: 9px; padding: 9px 13px; }
+  .avatar {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: var(--red);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .ph-header .meta { line-height: 1.25; flex-grow: 1; }
+  .ph-header .user { font-size: 13px; font-weight: 700; }
+  .ph-header .loc { font-size: 11px; color: #737373; }
+  .ph-header .dots { font-weight: 700; letter-spacing: 1px; color: #262626; }
+  .ph-img {
+    aspect-ratio: 4 / 5;
+    background-color: #f4f4f4;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+  }
+  .ph-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .drop {
+    width: 100%;
+    height: 100%;
+    border: 2px dashed #bdbdbd;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    color: #9a9a9a;
+    text-align: center;
+  }
+  .drop .drop-title { font-size: 12px; font-weight: 700; }
+  .drop .drop-sub { font-size: 10.5px; }
+  .ph-actions { display: flex; align-items: center; padding: 10px 13px 6px; }
+  .ph-actions .left { display: flex; gap: 14px; flex-grow: 1; }
+  .ph-actions svg, .ph-header svg { display: block; }
+  .ph-likes { padding: 0 13px; font-size: 13px; font-weight: 700; }
+  .ph-caption { padding: 4px 13px 0; font-size: 13px; line-height: 1.45; }
+  .ph-caption .user { font-weight: 700; }
+  .cap-placeholder { font-style: italic; color: #8a8a8a; }
+  .ph-comments { padding: 5px 13px 0; font-size: 12px; color: #8a8a8a; }
+  .ph-time { padding: 3px 13px 12px; font-size: 10px; color: #8a8a8a; text-transform: uppercase; letter-spacing: .04em; }
+
+  /* TikTok screen */
+  .screen.dark { background-color: #000; height: 600px; }
+  .screen.dark .statusbar { position: relative; z-index: 3; color: #fff; }
+  .screen.dark .home-bar { position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%); margin: 0; background-color: #fff; z-index: 3; }
+  .tt-video {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(160deg, #2c2c2c, #000);
+  }
+  .tt-video .drop { width: auto; height: auto; border-color: rgba(255,255,255,.45); color: rgba(255,255,255,.82); padding: 18px 22px; }
+  .tt-tabs {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    color: rgba(255,255,255,.65);
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .tt-tabs .active { color: #fff; font-weight: 700; position: relative; }
+  .tt-tabs .active::after { content: ''; position: absolute; left: 50%; bottom: -6px; transform: translateX(-50%); width: 20px; height: 3px; border-radius: 2px; background-color: #fff; }
+  .tt-rank { position: absolute; top: 80px; left: 12px; z-index: 3; display: flex; flex-direction: column; gap: 7px; width: 168px; }
+  .tt-rank .rank-title { font-size: 11px; font-weight: 700; color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,.65); margin-bottom: 2px; }
+  .rank-row { display: flex; align-items: center; gap: 8px; background-color: rgba(0,0,0,.42); border-radius: 8px; padding: 5px 8px; }
+  .rank-row .rank-num { font-size: 14px; font-weight: 700; color: #fff; width: 14px; text-align: center; }
+  .rank-row.top .rank-num { color: var(--red); }
+  .rank-row .rank-text { font-size: 11px; font-weight: 600; color: #fff; }
+  .tt-rail { position: absolute; right: 9px; bottom: 116px; z-index: 3; display: flex; flex-direction: column; align-items: center; gap: 15px; color: #fff; }
+  .rail-item { display: flex; flex-direction: column; align-items: center; gap: 3px; font-size: 11px; font-weight: 700; }
+  .tt-avatar {
+    position: relative;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: var(--red);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    border: 2px solid #fff;
+    margin-bottom: 8px;
+  }
+  .tt-avatar .plus {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: var(--red);
+    border: 2px solid #000;
+    color: #fff;
+    font-size: 13px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .tt-caption { position: absolute; left: 13px; right: 70px; bottom: 26px; z-index: 3; color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,.55); }
+  .tt-caption .tt-user { font-weight: 700; font-size: 14px; }
+  .tt-caption .tt-text { font-size: 12.5px; line-height: 1.4; margin-top: 5px; }
+  .tt-caption .tt-text .cap-placeholder { color: rgba(255,255,255,.85); }
+  .tt-caption .tt-sound { display: flex; align-items: center; gap: 7px; margin-top: 9px; font-size: 11.5px; }
+
+  /* Facebook screen */
+  .fb-head { display: flex; align-items: center; gap: 9px; padding: 11px 13px 7px; }
+  .fb-head .fb-meta { flex-grow: 1; line-height: 1.3; }
+  .fb-name { display: flex; align-items: center; gap: 5px; font-weight: 700; font-size: 13.5px; color: #050505; }
+  .fb-verified { width: 14px; height: 14px; border-radius: 50%; background-color: var(--blue); color: #fff; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .fb-sub { display: flex; align-items: center; gap: 5px; font-size: 11px; color: #65676b; margin-top: 1px; }
+  .fb-dots { color: #65676b; font-weight: 700; letter-spacing: 1px; }
+  .fb-text { padding: 0 13px 9px; font-size: 13px; line-height: 1.5; color: #050505; }
+  .fb-text strong { font-weight: 700; }
+  .fb-img { aspect-ratio: 4 / 5; background-color: #f4f4f4; display: flex; align-items: center; justify-content: center; padding: 12px; }
+  .fb-counts { display: flex; align-items: center; justify-content: space-between; padding: 9px 13px; font-size: 12px; color: #65676b; }
+  .fb-reactions { display: flex; align-items: center; gap: 4px; }
+  .fb-react { width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+  .fb-react.like { background-color: #1877f2; }
+  .fb-react.love { background-color: #f33e58; margin-left: -5px; }
+  .fb-divider { height: 1px; background-color: #e4e6eb; margin: 0 12px; }
+  .fb-actions { display: flex; padding: 3px 4px 6px; }
+  .fb-action { flex: 1; display: flex; align-items: center; justify-content: center; gap: 7px; padding: 9px 4px; font-size: 13px; font-weight: 600; color: #65676b; }
+  .fb-action svg { display: block; }
+
+  .concept-label { text-align: center; margin-top: 1.2rem; }
+  .concept-label .c-num { font-size: .72rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--red); }
+  .concept-label h3 { font-size: 1.1rem; font-weight: 700; margin-top: .15rem; }
+  .concept-label p { font-size: .85rem; color: var(--gray); font-weight: 600; margin-top: .3rem; }
+
+  /* ===== Content calendar ===== */
+  .calendar { background-color: var(--light); }
+  .quarter-strip { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.2rem; }
+  .q-month {
+    background-color: var(--white);
+    border-radius: 0 20px 0 20px;
+    border-top: 4px solid var(--red);
+    padding: 1.2rem 1.4rem;
+    box-shadow: 0 3px 12px rgba(0,0,0,.06);
+    page-break-inside: avoid;
+  }
+  .q-month.m2 { border-top-color: var(--green); }
+  .q-month.m3 { border-top-color: var(--blue); }
+  .q-month .m-name { font-weight: 700; font-size: 1.02rem; color: var(--red); }
+  .q-month.m2 .m-name { color: var(--green); }
+  .q-month.m3 .m-name { color: var(--blue); }
+  .q-month p { font-size: .85rem; font-weight: 600; color: var(--gray); margin-top: .25rem; }
+  .framework-badge-wrap { text-align: center; margin-top: 2.6rem; }
+  .framework-badge {
+    display: inline-block;
+    background-color: var(--old-light);
+    border-radius: 100px;
+    padding: .5em 1.3em;
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+  .cal-wrap { overflow-x: auto; margin-top: 1.2rem; page-break-inside: avoid; }
+  .cal { width: 100%; min-width: 860px; border-collapse: separate; border-spacing: 4px; }
+  .cal th {
+    font-size: .68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    color: var(--gray);
+    padding: .35rem .2rem;
+    text-align: center;
+  }
+  .cal th.wk-label { text-align: right; padding-right: .6rem; vertical-align: middle; width: 70px; }
+  .cal td {
+    background-color: var(--white);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    vertical-align: top;
+    padding: 5px;
+    width: calc((100% - 70px) / 7);
+    height: 74px;
+  }
+  .ev {
+    display: block;
+    font-size: .64rem;
+    font-weight: 600;
+    line-height: 1.3;
+    padding: 4px 6px;
+    border-radius: 5px;
+    border-left: 3px solid var(--gray);
+    background-color: rgba(51,51,51,.05);
+    margin-bottom: 4px;
+  }
+  .ev:last-child { margin-bottom: 0; }
+  .ev.tt { border-left-color: var(--red); background-color: rgba(238,42,41,.08); }
+  .ev.ig { border-left-color: var(--green); background-color: rgba(3,134,64,.08); }
+  .ev.fb { border-left-color: var(--blue); background-color: rgba(0,85,165,.09); }
+  .ev.int { font-style: italic; color: #6b6b6b; }
+  .legend { display: flex; justify-content: center; flex-wrap: wrap; gap: .6rem 1.5rem; margin-top: 1.3rem; font-size: .78rem; font-weight: 700; }
+  .legend .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: .45em; background-color: var(--gray); }
+  .legend .dot.tt { background-color: var(--red); }
+  .legend .dot.ig { background-color: var(--green); }
+  .legend .dot.fb { background-color: var(--blue); }
+  .cal-note { text-align: center; font-size: .9rem; font-weight: 600; color: var(--gray); max-width: 680px; margin: 1.8rem auto 0; }
+
+  /* ===== Analytics dashboard ===== */
+  .dash {
+    background-color: var(--white);
+    border-radius: 0 30px 0 30px;
+    box-shadow: 0 6px 22px rgba(0,0,0,.09);
+    padding: 1.8rem;
+    margin-top: 2.6rem;
+    page-break-inside: avoid;
+  }
+  .dash-head { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .6rem; margin-bottom: 1.4rem; }
+  .dash-head .dash-title { font-weight: 700; font-size: 1.08rem; }
+  .dash-head .dash-sub { font-size: .78rem; font-weight: 600; color: var(--gray); }
+  .sample-pill {
+    background-color: var(--old-light);
+    border-radius: 100px;
+    padding: .35em 1em;
+    font-size: .7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+  }
+  .kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 1rem; }
+  .kpi { background-color: var(--light); border-radius: 0 16px 0 16px; padding: 1.1rem 1.2rem; }
+  .kpi .k-label { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--gray); }
+  .kpi .k-value { font-size: 1.85rem; font-weight: 700; line-height: 1.15; color: var(--red); }
+  .kpi.k2 .k-value { color: var(--green); }
+  .kpi.k3 .k-value { color: var(--blue); }
+  .kpi .k-delta { font-size: .76rem; font-weight: 700; color: var(--green); }
+  .top-post { display: flex; align-items: center; gap: 1rem; background-color: var(--light); border-radius: 0 16px 0 16px; padding: 1rem 1.2rem; margin-top: 1rem; flex-wrap: wrap; }
+  .top-post .tp-thumb { width: 54px; height: 54px; border: 2px dashed #bdbdbd; border-radius: 10px; flex-shrink: 0; }
+  .top-post .tp-meta { flex-grow: 1; min-width: 200px; }
+  .top-post .tp-label { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--gray); }
+  .top-post .tp-name { font-weight: 700; font-size: .98rem; }
+  .top-post .tp-stats { font-size: .8rem; font-weight: 600; color: var(--gray); }
+  .tp-pill { background-color: var(--green); color: var(--white); border-radius: 100px; padding: .35em 1em; font-size: .72rem; font-weight: 700; white-space: nowrap; }
+  .dash-bottom { display: grid; grid-template-columns: 1fr 1.2fr; gap: 2rem; margin-top: 1.6rem; padding-top: 1.6rem; border-top: 1px solid var(--line); }
+  .chart-title { font-size: .68rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--gray); margin-bottom: 1rem; }
+  .bars { display: flex; align-items: flex-end; gap: 1.6rem; }
+  .bar-col { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; }
+  .bar-val { font-size: .74rem; font-weight: 700; margin-bottom: .3rem; }
+  .bar { width: 100%; max-width: 56px; border-radius: 6px 6px 0 0; background-color: var(--red); }
+  .bar.tt { height: 110px; }
+  .bar.ig { background-color: var(--green); height: 51px; }
+  .bar.fb { background-color: var(--blue); height: 27px; }
+  .bar-name { font-size: .72rem; font-weight: 700; color: var(--gray); margin-top: .4rem; }
+  .report-list h3 { font-size: .95rem; font-weight: 700; margin-bottom: .8rem; }
+  .analytics-note { text-align: center; font-size: .9rem; font-weight: 600; color: var(--gray); max-width: 680px; margin: 1.9rem auto 0; }
+
+  /* ===== Data ===== */
+  .data { background-color: var(--light); }
+  .stat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.6rem; margin-top: 2.6rem; }
+  .stat-card {
+    background-color: var(--white);
+    border-radius: 0 30px 0 30px;
+    border-top: 6px solid var(--red);
+    padding: 2.2rem 1.8rem;
+    text-align: center;
+    box-shadow: 0 4px 18px rgba(0,0,0,.07);
+    page-break-inside: avoid;
+  }
+  .stat-card.c2 { border-top-color: var(--blue); }
+  .stat-card.c3 { border-top-color: var(--green); }
+  .stat-number { font-size: 3.2rem; font-weight: 700; line-height: 1; color: var(--red); }
+  .stat-card.c2 .stat-number { color: var(--blue); }
+  .stat-card.c3 .stat-number { color: var(--green); }
+  .stat-label { font-size: .98rem; font-weight: 600; margin-top: .8rem; }
+  .stat-source { font-size: .78rem; font-style: italic; color: var(--gray); margin-top: .9rem; }
+  .data .takeaway { text-align: center; font-size: .98rem; font-weight: 600; max-width: 640px; margin: 2.4rem auto 0; }
+
+  /* ===== Footer ===== */
+  .footer { background-color: var(--ink); color: var(--white); font-size: .82rem; padding: 1.6rem 0; }
+  .footer .width-container { display: flex; justify-content: center; text-align: center; }
+
+  /* ===== Responsive ===== */
+  @media (max-width: 900px) {
+    .hero .width-container { grid-template-columns: 1fr; }
+    .hero-panel { max-width: 460px; margin: 0 auto; }
+    .prepared { text-align: left; }
+    .humor-grid { grid-template-columns: 1fr; }
+    .dash-bottom { grid-template-columns: 1fr; }
+  }
+
+  /* ===== Print ===== */
+  @media print {
+    .site-nav, .hero-btns { display: none; }
+    section { padding: 2.2rem 0; }
+    .phone { box-shadow: none; }
+    .cal { min-width: 0; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="width-container">
+      <span class="mark">Toot 'n Totum</span>
+      <span class="tag">Social Media Proposal</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="width-container">
+      <div class="brand">
+        <div class="name">Toot 'n Totum</div>
+        <div class="sub">Social Media Coordinator Proposal</div>
+      </div>
+      <div class="prepared">
+        <div class="label">Prepared for</div>
+        <div class="who">Alyssa Mince, Marketing Manager</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section nav -->
+  <nav class="site-nav">
+    <div class="width-container">
+      <a href="#current">Today</a>
+      <a href="#recommendation">The Idea</a>
+      <a href="#platforms">Platforms</a>
+      <a href="#community">Community</a>
+      <a href="#mockups">Mockups</a>
+      <a href="#calendar">Calendar</a>
+      <a href="#analytics">Analytics</a>
+      <a href="#data">Data</a>
+    </div>
+  </nav>
+
+  <!-- ===== 1. Hero ===== -->
+  <section class="hero" id="top">
+    <div class="width-container">
+      <div class="hero-copy">
+        <span class="eyebrow">A Proposal for the Toot 'n Totum Marketing Team</span>
+        <h1>Anthony Hernandez</h1>
+        <div class="hero-role">Candidate for Social Media Coordinator</div>
+        <p class="hero-thesis">Toot 'n Totum is already part of everyday life in Amarillo, and its social media should feel just as familiar.</p>
+        <div class="hero-meta">Amarillo, Texas &middot; June 2026</div>
+        <div class="hero-btns">
+          <a href="#recommendation" class="btn">Read the Recommendation</a>
+          <a href="#mockups" class="btn btn-red">See the Post Concepts</a>
+        </div>
+      </div>
+      <div class="hero-panel texture">
+        <span class="panel-label">The Brand Today</span>
+        <div class="fact">
+          <div class="big">70+</div>
+          <div class="small">locations across the Texas Panhandle and beyond</div>
+        </div>
+        <div class="fact">
+          <div class="big">75+</div>
+          <div class="small">years earning Amarillo's trust, one stop at a time</div>
+        </div>
+        <div class="fact">
+          <div class="big">2026</div>
+          <div class="small">CStore Decisions Chain of the Year</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 2. Current state ===== -->
+  <section class="current" id="current">
+    <div class="width-container">
+      <div class="section-head">
+        <span class="eyebrow">01 &middot; Current State</span>
+        <h2 class="section-title">Where Things Stand <span class="accent">Today</span></h2>
+        <p class="section-subtitle">Three platforms, three kinds of headroom. All of it good news.</p>
+        <p class="section-intro">I went through Toot 'n Totum's channels the way a new follower would, and the takeaway is genuinely exciting. The brand equity is enormous, the visual identity is sharp, and the biggest wins are still sitting on the table waiting to be picked up.</p>
+      </div>
+      <div class="platform-state-grid">
+        <div class="state-card tt">
+          <h3>TikTok</h3>
+          <div class="tagline">The open lane</div>
+          <p>TikTok rewards exactly what Toot 'n Totum has in abundance: real places, real people, and daily rituals worth filming. Right now this is the brand's most untapped audience, which means there is no baggage and no bad habits to undo. The lane is wide open for a presence that feels native from day one.</p>
+          <p class="opportunity"><strong>The opportunity:</strong> become the first Amarillo brand people follow for fun, not just for deals.</p>
+        </div>
+        <div class="state-card ig">
+          <h3>Instagram</h3>
+          <div class="tagline">The warm-up act</div>
+          <p>The account shows up consistently and keeps the brand looking polished, which is a real foundation. The opportunity is to point the camera outward: more faces, more stores, more video. A promo graphic earns a glance. A Reel about the cashier who knows everyone's order earns a share.</p>
+          <p class="opportunity"><strong>The opportunity:</strong> shift from announcements to moments, and let Reels carry the reach.</p>
+        </div>
+        <div class="state-card fb">
+          <h3>Facebook</h3>
+          <div class="tagline">The home crowd</div>
+          <p>This is where Toot 'n Totum's most loyal guests already gather, and practical updates land well here. The opportunity is conversation. Fast replies, shout-outs by name, and posts that ask Amarillo a question can turn a scrolling audience into a commenting one.</p>
+          <p class="opportunity"><strong>The opportunity:</strong> treat every comment like a guest walking through the door.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3. Core recommendation ===== -->
+  <section class="recommendation texture" id="recommendation">
+    <div class="width-container">
+      <span class="eyebrow">02 &middot; The Core Recommendation</span>
+      <h2>Stop broadcasting.<br><span class="line-two">Start connecting.</span></h2>
+      <p>Toot 'n Totum does not need social media to introduce itself to Amarillo. The city already fuels up here, grabs lunch here, washes the truck here, and supports its schools through programs like Spirit Pump. The brand is woven into daily life in a way most companies spend millions trying to imitate.</p>
+      <p>So the job of the feed is not to broadcast at that community. It is to reflect it back. Less megaphone, more neighbor. When the channels sound the way the stores feel, engagement stops being a metric to chase and becomes a habit guests keep.</p>
+      <div class="chips">
+        <span class="chip">70+ locations</span>
+        <span class="chip">Hundreds of team members</span>
+        <span class="chip">Thousands of daily guests</span>
+      </div>
+      <p class="kicker">That is not an audience to reach. That is a community to feature.</p>
+      <div class="values-note">
+        <span class="values-label">Rooted in Toot 'n Totum's Values</span>
+        <p>This philosophy is really just the company's own values translated to the feed. <strong>Guest Ready</strong> means answering every comment like someone just walked up to the counter. <strong>Honor and Value</strong> means celebrating team members and guests by name and treating their stories with care. <strong>Quick Clean and Convenient</strong> means content that respects a thirty-second attention span and always looks sharp. <strong>Ownership</strong> means every post gets measured, learned from, and made better the next week. And <strong>Team-Focused</strong> means the people behind the counters are the stars, never just the logo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4. Platform strategy ===== -->
+  <section id="platforms">
+    <div class="width-container">
+      <div class="section-head">
+        <span class="eyebrow">03 &middot; Platform Strategy</span>
+        <h2 class="section-title">One Voice, <span class="accent">Three Jobs</span></h2>
+        <p class="section-subtitle">The same warm personality everywhere, with each platform doing what it does best.</p>
+      </div>
+      <div class="platform-grid">
+        <div class="platform-card tt">
+          <div class="card-head">
+            <h3>TikTok</h3>
+            <div class="role">Discovery: where the Panhandle finds its next favorite stop</div>
+          </div>
+          <div class="card-body">
+            <ul class="check-list">
+              <li>Build recurring series instead of one-offs: store tours, fountain drink combos, satisfying car wash runs, and a day in the life of a shift.</li>
+              <li>Treat TikTok like a search engine. Captions and on-screen text should say Amarillo, breakfast, car wash, and road trip, because that is how people search now.</li>
+              <li>Let team members host. A familiar face in a familiar store will always beat a polished ad.</li>
+              <li>Jump on local moments: game days, school spirit weeks, and the famous Panhandle weather.</li>
+            </ul>
+            <div class="cadence">Cadence: 3 to 4 posts per week, filmed in batches during store visits</div>
+          </div>
+        </div>
+        <div class="platform-card ig">
+          <div class="card-head">
+            <h3>Instagram</h3>
+            <div class="role">Connection: where the brand's personality lives</div>
+          </div>
+          <div class="card-body">
+            <ul class="check-list">
+              <li>Lead with Reels and let short-form video do the heavy lifting on reach.</li>
+              <li>Turn the grid into a community album: employee spotlights, guest features, and local partnerships.</li>
+              <li>Use Stories daily for the playful stuff: polls, this-or-that votes, and new item sneak peeks.</li>
+              <li>Repost guest photos and videos with permission, so followers see themselves in the feed.</li>
+            </ul>
+            <div class="cadence">Cadence: 4 to 5 Reels per week, Stories daily, grid posts that earn their spot</div>
+          </div>
+        </div>
+        <div class="platform-card fb">
+          <div class="card-head">
+            <h3>Facebook</h3>
+            <div class="role">Community: where loyal guests already gather</div>
+          </div>
+          <div class="card-body">
+            <ul class="check-list">
+              <li>Keep the practical wins coming: fuel deals, REWARDS updates, and new store news belong here.</li>
+              <li>Add a conversation layer with questions, polls, and shout-outs that invite comments.</li>
+              <li>Answer every comment, message, and review within one business day.</li>
+              <li>Give philanthropy and school partnerships a bigger stage. The hometown crowd celebrates loudest here.</li>
+            </ul>
+            <div class="cadence">Cadence: 4 to 5 posts per week with daily community management</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 5. Community content model ===== -->
+  <section class="community" id="community">
+    <div class="width-container">
+      <div class="section-head">
+        <span class="eyebrow">04 &middot; The Community Content Model</span>
+        <h2 class="section-title">People First, <span class="accent">Always</span></h2>
+        <p class="section-subtitle">Why employee and community-driven content is the highest leverage move on the board.</p>
+      </div>
+      <div class="narrative">
+        <p>Most brands have to manufacture a community before they can market to one. Toot 'n Totum already has the real thing: more than 70 locations, hundreds of team members, and guests who stop by every single day, sometimes twice. That kind of local density is a content engine no agency can replicate, and it is sitting there ready to be switched on.</p>
+        <p>People follow people. A logo can inform, but a familiar face invites. When the feed features the cashier who remembers your order, the store that fuels your Friday nights, and the guests who make each location feel like theirs, every post becomes something the right audience wants to share: the neighbors.</p>
+      </div>
+      <div class="steps">
+        <div class="step s1">
+          <span class="num">1</span>
+          <h3>Capture</h3>
+          <p>Give stores a simple way to send in raw moments: a monthly theme calendar, a quick consent step, and a phone. No production burden on busy teams.</p>
+        </div>
+        <div class="step s2">
+          <span class="num">2</span>
+          <h3>Feature</h3>
+          <p>The coordinator shapes those moments into spotlight posts, recurring series, and Reels with one consistent, warm voice across every platform.</p>
+        </div>
+        <div class="step s3">
+          <span class="num">3</span>
+          <h3>Amplify</h3>
+          <p>Featured team members, schools, and guests share the posts to their own circles, and the reach compounds without a dollar of ad spend.</p>
+        </div>
+      </div>
+      <p class="bonus">Bonus: every employee spotlight quietly doubles as the best recruiting ad Toot 'n Totum could run.</p>
+    </div>
+  </section>
+
+  <!-- ===== 7. Concept mockups ===== -->
+  <section id="mockups">
+    <div class="width-container">
+      <div class="section-head">
+        <span class="eyebrow">06 &middot; Concept Mockups</span>
+        <h2 class="section-title">What It Looks Like in the <span class="accent">Feed</span></h2>
+        <p class="section-subtitle">Three post concepts, one per platform, built on the Community Content Model.</p>
+      </div>
+      <p class="mockups-note">The image and video areas are intentionally left open so real photos from real stores can drop straight in.</p>
+
+      <div class="phones">
+
+        <!-- Concept 01: TikTok -->
+        <div class="concept">
+          <img src="Toot n Portfolio/Tiktok.jpg" alt="TikTok concept: Breakfast Tier List" style="width:100%;display:block;border-radius:12px;">
+          <div class="concept-label">
+            <span class="c-num">Concept 01 &middot; TikTok</span>
+            <h3>Employee Picks</h3>
+            <p>A recurring format where team members rank their honest favorites. Equal parts fun, useful, and a built-in reason to comment.</p>
+          </div>
+        </div>
+
+        <!-- Concept 02: Instagram -->
+        <div class="concept">
+          <img src="Toot n Portfolio/Instagram.png" alt="Instagram concept: Graduation Community Post" style="width:100%;display:block;border-radius:12px;">
+          <div class="concept-label">
+            <span class="c-num">Concept 02 &middot; Instagram</span>
+            <h3>Graduation Community Post</h3>
+            <p>Local pride content that meets a real Amarillo moment, built for tagging, sharing, and a flood of proud comments.</p>
+          </div>
+        </div>
+
+        <!-- Concept 03: Facebook -->
+        <div class="concept">
+          <img src="Toot n Portfolio/Facebook.png" alt="Facebook concept: Employee of the Month" style="width:100%;display:block;border-radius:12px;">
+          <div class="concept-label">
+            <span class="c-num">Concept 03 &middot; Facebook</span>
+            <h3>Employee of the Month</h3>
+            <p>A monthly highlight that honors the team and gives the hometown crowd a name to celebrate in the comments.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 8. Content calendar ===== -->
+  <section class="calendar" id="calendar">
+    <div class="width-container">
+      <div class="section-head">
+        <span class="eyebrow">07 &middot; Content Calendar</span>
+        <h2 class="section-title">Planning the <span class="accent">Quarter</span></h2>
+        <p class="section-subtitle">Anchors stay steady, themes rotate, and Amarillo sets the pace.</p>
+        <p class="section-intro">Each quarter starts with a theme map built around seasons, school calendars, and store moments, then breaks down into months and weeks. Here is how the third quarter of 2026 could take shape, with one sample month mapped out below.</p>
+      </div>
+      <div class="quarter-strip">
+        <div class="q-month m1">
+          <div class="m-name">July</div>
+          <p>Summer road trips, car wash season, and cold drinks for triple-digit days.</p>
+        </div>
+        <div class="q-month m2">
+          <div class="m-name">August</div>
+          <p>Back to school: Spirit Pump kickoff, teacher shout-outs, and the morning rush.</p>
+        </div>
+        <div class="q-month m3">
+          <div class="m-name">September</div>
+          <p>Football Fridays, game day series, and hometown features all month long.</p>
+        </div>
+      </div>
+      <div class="framework-badge-wrap">
+        <span class="framework-badge">Sample framework, not a rigid plan</span>
+      </div>
+      <div class="cal-wrap">
+        <table class="cal">
+          <thead>
+            <tr>
+              <th class="wk-label"></th>
+              <th scope="col">Mon</th>
+              <th scope="col">Tue</th>
+              <th scope="col">Wed</th>
+              <th scope="col">Thu</th>
+              <th scope="col">Fri</th>
+              <th scope="col">Sat</th>
+              <th scope="col">Sun</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="wk-label" scope="row">Week 1</th>
+              <td><span class="ev ig">Employee spotlight Reel</span><span class="ev fb">REWARDS deal</span></td>
+              <td><span class="ev tt">Store tour series</span><span class="ev fb">Ask Amarillo</span></td>
+              <td><span class="ev ig">New item tease</span><span class="ev fb">Fuel deal</span></td>
+              <td><span class="ev tt">Fountain combo</span><span class="ev ig">Community carousel</span></td>
+              <td><span class="ev ig">Hometown Friday Reel</span><span class="ev fb">Game day shout-out</span></td>
+              <td><span class="ev tt">Car wash ASMR</span></td>
+              <td><span class="ev fb">Week ahead deals</span></td>
+            </tr>
+            <tr>
+              <th class="wk-label" scope="row">Week 2</th>
+              <td><span class="ev ig">Guest feature Reel</span><span class="ev fb">REWARDS push</span></td>
+              <td><span class="ev tt">Day in the life shift</span><span class="ev fb">Snack bracket poll</span></td>
+              <td><span class="ev ig">Spirit Pump tease</span><span class="ev fb">Fuel deal</span></td>
+              <td><span class="ev tt">Employee feature</span><span class="ev ig">UGC repost</span></td>
+              <td><span class="ev ig">Hometown Friday Reel</span><span class="ev fb">Friday night lights</span></td>
+              <td><span class="ev tt">Trend jump</span></td>
+              <td><span class="ev fb">Community shout-out</span></td>
+            </tr>
+            <tr>
+              <th class="wk-label" scope="row">Week 3</th>
+              <td><span class="ev ig">Employee spotlight Reel</span><span class="ev fb">REWARDS deal</span></td>
+              <td><span class="ev tt">Store tour series</span><span class="ev fb">Ask Amarillo</span></td>
+              <td><span class="ev ig">Community carousel</span><span class="ev fb">Fuel deal</span></td>
+              <td><span class="ev tt">Car care tip</span><span class="ev ig">New item Reel</span></td>
+              <td><span class="ev ig">Hometown Friday Reel</span><span class="ev fb">Game day shout-out</span></td>
+              <td><span class="ev tt">Behind the wash</span></td>
+              <td><span class="ev fb">Week ahead deals</span></td>
+            </tr>
+            <tr>
+              <th class="wk-label" scope="row">Week 4</th>
+              <td><span class="ev ig">Month recap Reel</span><span class="ev fb">Community thank you</span></td>
+              <td><span class="ev tt">Team takeover</span><span class="ev fb">Snack bracket final</span></td>
+              <td><span class="ev ig">UGC repost</span><span class="ev fb">Fuel deal</span></td>
+              <td><span class="ev tt">Trend jump</span><span class="ev ig">Guest feature Reel</span></td>
+              <td><span class="ev ig">Hometown Friday Reel</span><span class="ev fb">Weekend events</span></td>
+              <td><span class="ev tt">Road trip stop</span></td>
+              <td><span class="ev int">Weekly report and next month plan</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="legend">
+        <span><span class="dot tt"></span>TikTok</span>
+        <span><span class="dot ig"></span>Instagram</span>
+        <span><span class="dot fb"></span>Facebook</span>
+        <span><span class="dot"></span>Internal</span>
+      </div>
+      <p class="cal-note">Instagram Stories run daily as the connective tissue between posts: polls, reshares, and quick store moments. The grid above flexes around store events, seasons, and whatever Amarillo is talking about that week.</p>
+    </div>
+  </section>
+
+  <!-- ===== 9. Analytics and reporting ===== -->
+  <section id="analytics">
+    <div class="width-container">
+      <div class="section-head">
+        <span class="eyebrow">08 &middot; Analytics and Reporting</span>
+        <h2 class="section-title">Measuring What <span class="accent">Matters</span></h2>
+        <p class="section-subtitle">Key metrics tracked and analyzed weekly, then turned into next week's plan.</p>
+        <p class="section-intro">Numbers only help if they change what happens next. Every week ends with a one-page snapshot like this one: what reached people, what they did with it, and what we try next. It stays in plain language so anyone on the team can read it in two minutes.</p>
+      </div>
+      <div class="dash">
+        <div class="dash-head">
+          <div>
+            <div class="dash-title">Weekly Social Snapshot</div>
+            <div class="dash-sub">All platforms &middot; Week over week</div>
+          </div>
+          <span class="sample-pill">Placeholder data</span>
+        </div>
+        <div class="kpis">
+          <div class="kpi k1">
+            <div class="k-label">Total Reach</div>
+            <div class="k-value">412.3K</div>
+            <div class="k-delta">+12% vs last week</div>
+          </div>
+          <div class="kpi k2">
+            <div class="k-label">Engagement Rate</div>
+            <div class="k-value">4.8%</div>
+            <div class="k-delta">+0.6 pts vs last week</div>
+          </div>
+          <div class="kpi k3">
+            <div class="k-label">Follower Growth</div>
+            <div class="k-value">+1,142</div>
+            <div class="k-delta">+9% vs last week</div>
+          </div>
+        </div>
+        <div class="top-post">
+          <div class="tp-thumb"></div>
+          <div class="tp-meta">
+            <div class="tp-label">Top Performing Post</div>
+            <div class="tp-name">Faces of the Store: Maria's 5am crew</div>
+            <div class="tp-stats">38.2K views &middot; 2,940 likes &middot; 187 shares &middot; 96 comments</div>
+          </div>
+          <span class="tp-pill">Instagram Reel</span>
+        </div>
+        <div class="dash-bottom">
+          <div>
+            <div class="chart-title">Engagement rate by platform</div>
+            <div class="bars">
+              <div class="bar-col"><span class="bar-val">5.2%</span><div class="bar tt"></div><span class="bar-name">TikTok</span></div>
+              <div class="bar-col"><span class="bar-val">2.4%</span><div class="bar ig"></div><span class="bar-name">Instagram</span></div>
+              <div class="bar-col"><span class="bar-val">1.3%</span><div class="bar fb"></div><span class="bar-name">Facebook</span></div>
+            </div>
+          </div>
+          <div class="report-list">
+            <h3>What the weekly report answers</h3>
+            <ul class="check-list">
+              <li>Which three posts won the week, and what made them work?</li>
+              <li>Where is engagement trending up or down, and why?</li>
+              <li>How fast did we reply, and what were guests asking about?</li>
+              <li>What is the one experiment we run next week?</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="analytics-note">Weekly snapshots roll up into a monthly deep dive and a quarterly review, so the calendar above is always being tuned by what the numbers say.</p>
+    </div>
+  </section>
+
+  <!-- ===== 10. Data ===== -->
+  <section class="data" id="data">
+    <div class="width-container">
+      <div class="section-head">
+        <span class="eyebrow">09 &middot; The Data</span>
+        <h2 class="section-title">The Numbers Behind the <span class="accent">Plan</span></h2>
+        <p class="section-subtitle">Short-form video and search-first thinking are not trends. They are where attention lives now.</p>
+      </div>
+      <div class="stat-grid">
+        <div class="stat-card c1">
+          <div class="stat-number">3.70%</div>
+          <div class="stat-label">TikTok's average engagement rate, more than 7x Instagram's 0.48%</div>
+          <div class="stat-source">Source: Socialinsider 2026 Benchmark Report</div>
+        </div>
+        <div class="stat-card c2">
+          <div class="stat-number">49%</div>
+          <div class="stat-label">of US consumers use TikTok as a search tool, up from 41% in 2024</div>
+          <div class="stat-source">Source: 2026 social media industry reports</div>
+        </div>
+        <div class="stat-card c3">
+          <div class="stat-number">44%</div>
+          <div class="stat-label">higher engagement for Instagram Reels compared to static posts</div>
+          <div class="stat-source">Source: Socialinsider, 2026</div>
+        </div>
+      </div>
+      <p class="takeaway">The plan leans into Reels, TikTok series, and search-friendly captions because the data and the audience already agree.</p>
+    </div>
+  </section>
+
+  <!-- Footer sign-off -->
+  <footer class="footer">
+    <div class="width-container">
+      <span>Prepared by Anthony Hernandez for the Toot 'n Totum marketing team, June 2026.</span>
+    </div>
+  </footer>
+
+</body>
+</html>
